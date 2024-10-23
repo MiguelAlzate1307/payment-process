@@ -18,7 +18,7 @@ public class CardService {
         return card;
     }
 
-    public Card getCards(Long id) {
+    public Card getCard(Long id) {
         return cards.stream()
                 .filter(card -> card.getId().equals(id))
                 .findFirst()

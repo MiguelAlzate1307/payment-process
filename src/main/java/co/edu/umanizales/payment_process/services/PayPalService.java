@@ -12,7 +12,7 @@ public class PayPalService {
     private List<PayPalAccount> accounts = new ArrayList<>();
     private Long currentId = 1L;
 
-    public PayPalAccount createCard(PayPalAccount account) {
+    public PayPalAccount createAccount(PayPalAccount account) {
         account.setId(currentId++);
         accounts.add(account);
         return account;
