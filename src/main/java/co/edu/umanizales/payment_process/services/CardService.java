@@ -20,7 +20,7 @@ public class CardService {
 
     public Card getCard(Long id) {
         return cards.stream()
-                .filter(card -> card.getId().equals(id))
+                .filter(card -> card.getId() == id)
                 .findFirst()
                 .orElse(null);
     }
